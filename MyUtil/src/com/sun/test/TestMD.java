@@ -1,8 +1,10 @@
-package com.sun.base64;
+package com.sun.test;
 
 import java.security.NoSuchAlgorithmException;
 
 import org.apache.commons.codec.binary.Hex;
+
+import com.sun.codec.MDCoder;
 
 public class TestMD {
 	public static void main(String[] args) {

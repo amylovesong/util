@@ -1,4 +1,4 @@
-package com.sun.base64;
+package com.sun.codec;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
