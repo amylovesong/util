@@ -1,5 +1,7 @@
 package com.sun.test;
 
+import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
+
 public class TestUtil {
 	public static void sysOP(String algorithm, String encodedString) {
 		System.out.println("\n" + algorithm + "\n" + "encodedString:"
@@ -7,8 +9,8 @@ public class TestUtil {
 	}
 
 	public static void sysOP(String algorithm, byte[] key, String encodedString) {
-		System.out.println("\n" + algorithm + "\n" + "key:" + key + "\n"
-				+ "encodedString:" + encodedString + "\n" + "length:"
-				+ encodedString.length());
+		System.out.println("\n" + algorithm + "\n" + "key:"
+				+ new HexBinaryAdapter().marshal(key) + "\n" + "encodedString:"
+				+ encodedString + "\n" + "length:" + encodedString.length());
 	}
 }
